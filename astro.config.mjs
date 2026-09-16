@@ -9,7 +9,10 @@ export default defineConfig({
 		starlight({
 			title: 'Moto Edge 50 Guides',
 			description: 'Unlock, flash custom ROMs, root, and unbrick guides for Motorola Edge 50 (codename tank, XT2407).',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/subhashhhhhh/moto-edge-50-guides' },
+				{ icon: 'telegram', label: 'Telegram', href: 'https://t.me/moto_edge_50' },
+			],
 			sidebar: [
 				{
 					label: 'Start Here',
