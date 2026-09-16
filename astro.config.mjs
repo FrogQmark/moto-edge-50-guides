@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://edge50.pages.dev',
 	integrations: [
 		starlight({
 			title: 'Moto Edge 50 Guides',
