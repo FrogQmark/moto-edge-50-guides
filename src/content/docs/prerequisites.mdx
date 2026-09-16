@@ -1,0 +1,93 @@
+---
+title: Prerequisites
+description: What to prepare before unlocking and flashing Motorola Edge 50 (tank).
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+:::caution
+Unlocking and flashing wipes all data and voids Motorola warranty permanently — even if you relock later. Proceed only on your own device.
+:::
+
+## 1. Confirm you have tank
+
+- Settings > About phone > Model: must be **XT2407-1 / XT2407-2 / XT2407-3**
+- In fastboot: `fastboot getvar product` should report `tank`
+- If you have Fusion / Pro / Ultra / Neo, stop. Builds here will brick your device.
+
+## 2. Backup
+
+- Copy photos, WhatsApp, 2FA codes off-device
+- If already rooted: [Neo Backup](https://github.com/NeoApplications/Neo-Backup) (free, open-source) or Swift Backup (paid — cloud backup needs premium) for app + data, otherwise manual copy via MTP / Google backup (unlocking wipes everything, and most backup apps need root first)
+- Save IMEI, serial, stock build number (Settings > About) — needed for unbrick
+- Charge to 60%+ and use a good USB-A to USB-C data cable (not charge-only)
+
+## 3. On the phone
+
+1. Settings > About > tap Build number 7x to enable Developer options
+2. Settings > System > Developer options: enable **OEM unlocking** + **USB debugging**
+3. Remove Google account + screen lock PIN if you want to avoid FRP lock after wipe
+4. Insert SIM PIN removal recommended during flash to avoid lock prompts in recovery
+
+## 4. On the laptop
+
+Pick your OS:
+
+<Tabs>
+  <TabItem label="Windows">
+    ```powershell
+    winget install -e --id Google.PlatformTools
+    ```
+
+    1. Install **Motorola USB drivers** (required): https://en-us.support.motorola.com/app/usb-drivers — reboot if prompted
+    2. Fallback: download https://developer.android.com/tools/releases/platform-tools, unzip, and add the folder to PATH
+    3. Open a new PowerShell / Terminal and verify:
+    ```powershell
+    adb devices
+    adb reboot bootloader
+    fastboot devices
+    ```
+  </TabItem>
+  <TabItem label="macOS">
+    ```bash
+    brew install android-platform-tools
+    ```
+
+    1. No drivers needed
+    2. Fallback: download https://developer.android.com/tools/releases/platform-tools, unzip, and add to PATH
+    3. Verify:
+    ```bash
+    adb devices
+    adb reboot bootloader
+    fastboot devices
+    ```
+  </TabItem>
+  <TabItem label="Linux">
+    ```bash
+    # Debian / Ubuntu
+    sudo apt install android-tools-adb android-tools-fastboot
+
+    # Fedora
+    sudo dnf install android-tools
+
+    # Arch
+    sudo pacman -S android-tools
+    ```
+
+    1. No drivers, but add udev rules so `adb` works without sudo (your distro's `android-udev-rules` package), then replug the phone
+    2. If distro packages misbehave, use the official build: https://developer.android.com/tools/releases/platform-tools
+    3. Verify:
+    ```bash
+    adb devices
+    adb reboot bootloader
+    fastboot devices
+    ```
+  </TabItem>
+</Tabs>
+
+## 5. Downloads checklist
+
+- Stock firmware for your exact XT2407 variant (see [Resources](/resources/))
+- Rescue and Smart Assistant (LMSA) installed as unbrick fallback
+- Evolution X 12.2 zip for tank + verified checksum
+- Magisk APK if you plan to root (see [Root](/root/))

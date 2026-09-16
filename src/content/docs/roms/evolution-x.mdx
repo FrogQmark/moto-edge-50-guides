@@ -1,0 +1,66 @@
+---
+title: Evolution X 12.2
+description: Evolution X 12.2 (Android 17) unofficial build for tank (2026-09-11).
+---
+
+import { Image } from 'astro:assets';
+import homescreen from '../../../assets/roms/evolution-x/homescreen.png';
+import quickSettings from '../../../assets/roms/evolution-x/quick-settings.png';
+import about from '../../../assets/roms/evolution-x/about.png';
+import evolver from '../../../assets/roms/evolution-x/evolver.png';
+
+:::caution
+Unofficial build. Backup first. Follow the generic [Flash ROMs](/flash/) flow plus the notes below.
+:::
+
+## Overview
+
+- Device: Motorola Edge 50 (tank, XT2407-1 / 2 / 3)
+- ROM version: 12.2, Android 17
+- Build: `EvolutionX-17.0-20260911-tank-12.2-Unofficial.zip` (2.9 GB, 2026-09-11)
+- Security patch: September 1, 2026
+- Status: Active — currently the only custom ROM for tank
+- Maintainer: [@Aju_george](https://t.me/Aju_george) on Telegram
+
+## Screenshots
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; max-width: 640px;">
+  <Image src={homescreen} alt="Home screen" width={280} />
+  <Image src={quickSettings} alt="Quick Settings" width={280} />
+  <Image src={about} alt="About phone" width={280} />
+  <Image src={evolver} alt="Evolver spoofing settings" width={280} />
+</div>
+
+## Download
+
+- ROM: [Google Drive](https://drive.google.com/file/d/1D2Q24Pr0Bn445HW7LQQVHg5EMPj5Xduq/view?usp=sharing)
+- Boot image for this build (mirrored): [/boot.img](/boot.img)
+
+```text
+SHA256: af1f533bfd8d7c095e026facb15b8a935cac1e8c6efe4d1e8f0d9d6d0208d39d
+MD5: e2df0051199517ccee2b187c3dcc13d7
+```
+
+Verify:
+
+```bash
+shasum -a 256 EvolutionX-17.0-20260911-tank-12.2-Unofficial.zip
+```
+
+## GApps or Vanilla?
+
+**GApps build — flash ROM only.** Do not flash NikGapps / MindTheGapps on top. After `adb sideload`, reboot straight to system per the [Flash ROMs](/flash/#gapps-vs-vanilla) GApps-included flow.
+
+## Known issues
+
+Add maintainer-reported bugs here with build date. Leave empty if none reported.
+
+## Install
+
+1. Read [Prerequisites](/prerequisites/) + [Unlock](/unlock/)
+2. Follow [Flash ROMs](/flash/) clean-flash steps with the zip above
+3. Optional: [Root](/root/)
+
+## Changelog
+
+- 2026-09-11: initial Unofficial 12.2 build added to this site

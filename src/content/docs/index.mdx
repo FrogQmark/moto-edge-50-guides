@@ -1,0 +1,76 @@
+---
+title: Moto Edge 50 (tank) Guides
+description: Unlock, flash Evolution X 12.2, root, and unbrick guides for Motorola Edge 50 codename tank.
+template: splash
+hero:
+  tagline: Custom ROM guides for Motorola Edge 50 — codename tank (XT2407-1 / 2 / 3)
+  image:
+    file: ../../assets/tank-no-background.png
+  actions:
+    - text: Start with Prerequisites
+      link: /prerequisites/
+      icon: right-arrow
+    - text: Unlock Bootloader
+      link: /unlock/
+      icon: external
+      variant: minimal
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+:::caution
+This site is for **tank only** (Edge 50 base, XT2407). Do not flash these builds on Fusion (`cusco`), Pro, Ultra, or Neo (`vienna`). Check Settings > About > Model before proceeding. Unlocking voids warranty permanently and wipes data.
+:::
+
+## Guides
+
+<CardGrid>
+  <LinkCard
+    title="Prerequisites"
+    icon="setting"
+    href="/prerequisites/"
+    description="Backup, drivers, platform-tools, battery, and how to verify your model is tank."
+  />
+  <LinkCard
+    title="Unlock Bootloader"
+    icon="unlock"
+    href="/unlock/"
+    description="Motorola unlock site, fastboot oem get_unlock_data, unlock key via email."
+  />
+  <LinkCard
+    title="Flash ROMs"
+    icon="rocket"
+    href="/flash/"
+    description="Generic clean flash, updates, and GApps vs Vanilla flow for any tank ROM."
+  />
+  <LinkCard
+    title="All ROMs"
+    icon="document"
+    href="/roms/"
+    description="ROM list for tank. Evolution X 12.2 is the only build right now."
+  />
+  <LinkCard
+    title="Root"
+    icon="star"
+    href="/root/"
+    description="Magisk / KernelSU / APatch notes for Evolution X on tank, Play Integrity."
+  />
+  <LinkCard
+    title="Resources"
+    icon="open-book"
+    href="/resources/"
+    description="Stock firmware (lolinet), LMSA, drivers, platform-tools, ROM download."
+  />
+  <LinkCard
+    title="Troubleshoot & FAQ"
+    icon="puzzle"
+    href="/troubleshoot-faq/"
+    description="Bootloop, slot A/B, fastbootd vs bootloader, unbrick, return to stock."
+  />
+</CardGrid>
+
+## Current status
+
+- Device: Motorola Edge 50 (tank) XT2407-1 / XT2407-2 / XT2407-3
+- ROM: Evolution X 12.2 (Android 17) — only custom ROM as of now
+- Scope of this site: tank only. Other Edge 50 variants will get separate pages when supported.
