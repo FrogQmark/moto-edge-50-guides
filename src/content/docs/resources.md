@@ -53,7 +53,7 @@ shasum -a 256 EvolutionX-17.0-20260911-tank-12.2-Unofficial.zip
 ## Recovery / boot
 
 - Use recovery / boot image shipped or linked by the ROM maintainer for your build date
-- For the 2026-09-11 Evolution X build, a copy is mirrored at [/boot.img](/boot.img) (96 MB)
+- For the 2026-09-11 Evolution X build, a copy is mirrored on [Google Drive](https://drive.google.com/file/d/10k2eF2NqXqVyHjPvFnz-seP-16OedXSB/view?usp=drive_link) (100 MB)
 - Do not use generic tank TWRP from other variants unless explicitly marked compatible
 
 ## Root

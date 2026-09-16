@@ -11,7 +11,7 @@ Always follow the ROM maintainer's XDA / release post if it differs from this pa
 
 - Unlocked bootloader ([Unlock](/unlock/))
 - ROM zip for **tank** from [All ROMs](/roms/) + verified checksum
-- Maintainer-specified recovery / boot image — for the 2026-09-11 Evolution X build, a copy is mirrored at [/boot.img](/boot.img) (96 MB, check ROM page before using on other builds)
+- Maintainer-specified recovery / boot image — for the 2026-09-11 Evolution X build, a copy is mirrored on [Google Drive](https://drive.google.com/file/d/10k2eF2NqXqVyHjPvFnz-seP-16OedXSB/view?usp=drive_link) (100 MB, check ROM page before using on other builds)
 - Platform-tools, 60%+ battery
 - Decide GApps vs Vanilla **before** flashing (see below)
 

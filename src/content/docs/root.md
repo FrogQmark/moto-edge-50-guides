@@ -9,7 +9,7 @@ Tested target: Evolution X 12.2 on tank. Methods change per build — trust main
 
 Use the image matching your **exact installed** build. Never patch a boot.img from a different build.
 
-**1. Download from this site (easiest):** use [/boot.img](/boot.img) mirrored on the [Evolution X page](/roms/evolution-x/) — only valid for the 2026-09-11 build.
+**1. Download from Drive (easiest):** use the [boot.img mirror](https://drive.google.com/file/d/10k2eF2NqXqVyHjPvFnz-seP-16OedXSB/view?usp=drive_link) linked on the [Evolution X page](/roms/evolution-x/) — only valid for the 2026-09-11 build.
 
 **2. Extract from ROM zip on laptop:** Evolution X zips use `payload.bin` (not a plain `boot.img`). Extract it with [vm03/payload_dumper](https://github.com/vm03/payload_dumper/):
 ```bash
