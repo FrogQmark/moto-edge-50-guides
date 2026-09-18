@@ -26,7 +26,7 @@ Always follow the ROM maintainer's XDA / release post if it differs from this pa
 ## Clean flash (first install)
 
 1. `adb reboot bootloader`
-2. Flash recovery if required by maintainer:
+2. Flash recovery if coming from stock:
 ```bash
 fastboot flash recovery recovery.img
 # or for A/B with boot-as-recovery:
