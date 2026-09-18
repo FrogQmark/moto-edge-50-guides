@@ -1,5 +1,5 @@
 ---
-title: Magisk Modules
+title: Root Modules
 description: Tested Magisk / KernelSU modules for tank on Evolution X 12.2.
 ---
 
@@ -21,7 +21,7 @@ Modules are the #1 bootloop cause. Install one at a time, reboot, test. Keep a w
 ## Safe install flow
 
 1. Download from official GitHub (not random mirrors)
-2. Magisk > Modules > Install from storage > reboot
+2. Magisk/Kernelsu > Modules > Install from storage > reboot
 3. If bootloop: hold Vol Up during boot to enter safe mode (disables modules), or `adb wait-for-device shell magisk --remove-modules` from PC, then reboot
 
 ## Do not install
