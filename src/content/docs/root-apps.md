@@ -8,7 +8,7 @@ Only list apps you or trusted testers verified on tank + Evolution X 12.2. Note 
 ## Backup & system
 
 - [**Neo Backup**](https://github.com/NeoApplications/Neo-Backup) — free, open-source app + data backup, batch restore after clean flash (needs root)
-- **Swift Backup** — same idea, polished UI, but cloud backup is paid
+- [**Swift Backup**](https://play.google.com/store/apps/details?id=org.swiftapps.swiftbackup) — same idea, polished UI, but cloud backup is paid
 - **App Manager** — debloat, trackers, inspect permissions
 - **Franco Kernel Manager / EX Kernel Manager** — kernel tweaks, battery profiles (only if kernel supports)
 

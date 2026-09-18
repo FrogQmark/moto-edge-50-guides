@@ -26,7 +26,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Unlock Bootloader', slug: 'unlock' },
 						{ label: 'Flash ROMs', slug: 'flash' },
-						{ label: 'Root with Magisk', slug: 'root' },
+						{ label: 'Root and Play Integrity', slug: 'root' },
 					],
 				},
 				{
