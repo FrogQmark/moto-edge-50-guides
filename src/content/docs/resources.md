@@ -1,6 +1,6 @@
 ---
 title: Downloads & Resources
-description: Stock firmware, tools, drivers, and Evolution X download links for tank.
+description: Stock firmware, tools, drivers, and download links for tank.
 ---
 
 :::caution
@@ -18,7 +18,7 @@ Do not re-host or mirror ROMs without maintainer permission. Link to official po
 - Motorola unlock portal: [unlock-your-device-a](https://en-us.support.motorola.com/app/standalone/bootloader/unlock-your-device-a/action/auth)
 - Platform-tools: https://developer.android.com/tools/releases/platform-tools
 - Motorola USB drivers (Windows): https://en-us.support.motorola.com/app/usb-drivers
-- Rescue and Smart Assistant (LMSA): https://en-us.support.motorola.com/app/answers/detail/a_id/88481 (unbrick / return to stock)
+- Online Fix (RSA): https://en-us.support.motorola.com/app/softwarefix (unbrick / return to stock)
 
 ## Firmware
 
@@ -54,11 +54,11 @@ shasum -a 256 EvolutionX-17.0-20260911-tank-12.2-Unofficial.zip
 
 - Use recovery / boot image shipped or linked by the ROM maintainer for your build date
 - For the 2026-09-11 Evolution X build, a copy is mirrored on [Google Drive](https://drive.google.com/file/d/10k2eF2NqXqVyHjPvFnz-seP-16OedXSB/view?usp=drive_link) (100 MB)
-- Do not use generic tank TWRP from other variants unless explicitly marked compatible
+- Do not use recoveries from other variants unless explicitly marked compatible
 
 ## Root
 
+- KernelSU (Recommended): check ROM page — only if the build explicitly supports it
 - Magisk: https://github.com/topjohnwu/Magisk/releases
-- KernelSU: only if maintainer supports it — check ROM thread
 
 Update this page on every new Evolution X drop: build date, changelog link, checksum.
