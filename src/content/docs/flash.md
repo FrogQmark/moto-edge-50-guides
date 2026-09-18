@@ -33,15 +33,18 @@ fastboot flash recovery recovery.img
 fastboot flash boot boot.img
 fastboot flash vendor_boot vendor_boot.img
 ```
-3. Reboot to recovery: hold Power + Vol Up, or `fastboot reboot recovery`
+3. Reboot to recovery: select "Recovery Mode" with the physical buttons, or `fastboot reboot recovery`
 4. In recovery: Factory reset / Format data (required coming from stock or another ROM)
 5. Sideload ROM:
 ```bash
 adb sideload rom-tank-*.zip
 ```
-Or copy zip to phone and Install in recovery UI.
-6. **If GApps ROM: reboot to system now.** First boot takes 5-15 min. Done.
-7. **If Vanilla + you want GApps:** when recovery asks to reboot after sideload, choose **Reboot to Recovery** (not System), then sideload GApps the same way:
+Or copy zip to phone and Install in recovery UI, if you're using a custom recovery that supports it.  
+
+Recovery will ask if you want to reboot to recovery after sideload  
+
+6. **If GApps ROM: choose no, and reboot to system.** First boot should take under 2 min. Done.
+7. **If Vanilla + you want GApps:** Choose yes, then sideload GApps the same way:
 ```bash
 adb sideload NikGapps-*.zip
 # or MindTheGapps-*.zip
@@ -60,7 +63,7 @@ Only if staying on the same ROM and maintainer allows it:
 4. Wipe cache / Dalvik if offered
 5. Reboot
 
-If bootloop after dirty flash, do a clean flash. Major Android bumps usually require clean.
+If bootloop after a dirty flash, do a clean flash. Major Android bumps usually require a clean flash.
 
 ## Slots (A/B)
 
@@ -75,6 +78,6 @@ fastboot reboot
 
 ## Back to stock
 
-1. Download exact XT2407 stock firmware from [Resources](/resources/)
-2. Use Rescue and Smart Assistant (LMSA) > Rescue, or fastboot flash per XML
+1. Use Motorola Online Fix (RSA) (Recommended. Windows only), or
+2. Download exact XT2407 stock firmware from [Resources](/resources/) 
 3. Relocking (`fastboot oem lock`) is **not recommended** on custom firmware — only relock on 100% stock, same variant, or you hard-brick.
